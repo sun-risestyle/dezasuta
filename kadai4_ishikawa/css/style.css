@@ -1,0 +1,323 @@
+@charset "utf-8";
+.header-contents{
+    display: flex;
+    align-items: center;
+    padding-left: 2.8%;
+    padding-right: 7.3%;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+h1{
+    width: 226px;
+}
+
+
+.header-nav ul{
+    display: flex;
+    gap: 80px;
+}
+.header-nav li{
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.wrap{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.md{
+    display: block;
+}
+
+.pc{
+    display: block;
+}
+
+main{
+    background-color: #e9d7bf;
+}
+
+section{
+    padding-top: 75px;
+}
+
+section.catchphrase{
+    text-align: center;
+}
+
+div.catchphrase-main p.catchphrase-main-ja{
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+p.catchphrase-explain{
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+section#Aboutus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+section#Aboutus img.about-img{
+    width: 50%;
+    /*height: 375px;*/
+    object-fit: cover;
+    border-radius: 0 0 50px 0;
+}
+
+section#Aboutus img.about-title{
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+section#Aboutus div.aboutus-main p.abouts-catchphrase{
+    margin-top: 20px;
+    font-size: 1.75rem;
+    line-height: 1.3;
+}
+
+section#Aboutus div.aboutus-main p.abouts-explain{
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+section h2.title-area{
+    text-align: center;
+}
+
+section h2.title-area img.title{
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+section#Menu ul.menu-items{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+section#Menu ul.menu-items li div.menu-img-area{
+    position: relative;
+}
+
+section#Menu ul.menu-items li div.menu-img-area::after{
+    position: absolute;
+    display: block;
+    color: #b3110f;
+    font-size: 1.75rem;
+    font-weight: bold;
+    left: 15px;
+    bottom: -1rem;
+}
+
+section#Menu ul.menu-items li.drink div.menu-img-area::after{
+    content: "Drink";
+}
+
+section#Menu ul.menu-items li.food div.menu-img-area::after{
+    content: "Food";
+}
+
+section#Menu ul.menu-items li.sweets div.menu-img-area::after{
+    content: "Sweets";
+}
+
+section#Menu ul.menu-items li div.menu-img-area img{
+    border-radius: 0 20px 0 0;
+}
+
+section#Menu ul.menu-items li p{
+    margin-top: 30px;
+}
+
+section#Event div.event-area{
+    background-color: #ffffff;
+    border: 3px solid #4f260b;
+    margin-top: 20px;
+}
+
+section#Event div.event-area ul{
+    
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+section#Event div.event-area li{
+   display: flex;
+   justify-content: start;
+   margin-bottom: 1rem;
+}
+
+section#Event div.event-area li:last-child{
+    margin-bottom: 0;
+}
+
+section#Event div.event-area li p{
+    margin-left: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+ }
+
+section#Event div.event-area li p a{
+    text-decoration: underline;
+}
+
+section#Gallery ul.gallery-area{
+    display: flex;
+}
+
+section#Gallery ul.gallery-area li{
+    flex: 1;
+}
+
+section#Access #map{
+    width: 100%;
+    height: 300px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+footer {
+    padding: 40px 40px 0 40px;
+    color: #000000;
+}
+
+footer div.footer-area{
+    padding-bottom: 40px;
+    color: #000000;
+}
+
+footer div.footer-area div.footer-left img.logo{
+    width: 200px;
+}
+
+footer div.footer-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer div.footer-area div.footer-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    line-height: 1.75;
+}
+
+
+footer div.footer-area div.footer-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    line-height: 1.75;
+}
+
+footer div.footer-area div.footer-right a img.top-button{
+    width: 80px;
+}
+
+footer small.copyright{
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .hamburger-menu-area{
+        display: block;
+    }
+    .header-nav ul{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    
+    .pc{
+        display: none !important;
+    }
+
+    .mainvisual img{
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    section#Aboutus {
+        flex-direction: column;
+    }
+
+    section#Aboutus img.about-img {
+        width: 100%;
+        border-radius: 0 0 0 0;
+    }
+
+    section#Aboutus div.aboutus-main p.abouts-catchphrase {
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+
+    section#Aboutus div.aboutus-main p.abouts-explain {
+        line-height: 1.5;
+    }
+
+    section#Menu ul.menu-items {
+        flex-direction: column;
+    }
+
+    section#Menu ul.menu-items li div.menu-img-area::after {
+        font-size: 2.5rem;
+        bottom: -30px;
+    }
+
+    section#Menu ul.menu-items li p {
+        margin-top: 50px;
+    }
+
+    section#Event div.event-area li {
+        flex-direction: column;
+        justify-content: start;
+        margin-bottom: 1.75rem;
+    }
+
+    section#Event div.event-area li p {
+        margin-left: 0;
+    }
+
+    footer {
+        padding: 20px 20px 0 20px;
+        color: #000000;
+    }
+    
+    footer div.footer-area{
+        padding-bottom: 20px;
+        color: #000000;
+    }
+
+    footer div.footer-area div.footer-left {
+        flex-direction: column;
+    }
+
+}
